@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body{
+  z-index: 1;
+}
+header {
+  position: sticky;
+  top:0%;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  z-index: 2;
+}
+footer{
+  padding: .5%;
+  background-color: #4b4b4b;
+  grid-template-columns: auto auto auto 30%;
+  color: white;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ----------------------------- */
+
+nav{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 6px -6px rgb(121, 121, 121);
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin: 1% 2%;
+    font-weight:bolder;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav a.active {
+    color:black;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+  
+.controles h2 {
+    font-weight: 300;
+    text-align: center;
+}
+.controles {
+  background-color: #fff;
+  width: 35%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.controles form {
+  padding: 5%;
+}
+
+.controles form input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 4px;
+  margin: 3% 0;
+}
+
+.controles form input[type="text"],
+.controles form input[type="password"] {
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  color: #8a8b8e;
+  border: 1px solid #c2c0ca;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: inline-block;
+  background: none;
+}
+.controles form input[type="text"]:focus,
+.controles form input[type="password"]:focus {
+  border-color: #3ca9e2;
+}
+.controles form input[type="submit"] {
+  border: none;
+  display: block;
+  background-color: #3ca9e2;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+.controles form input[type="submit"]:hover {
+  background-color: #329dd5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.controles div {
+  background-color: #eeedf1;
+  color: #8a8b8e;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 4px 4px;
+}
+.controles div a:hover{
+  color: blue;
+  cursor:pointer;
+}
+
+
+
+#inicio-sesion{
+    display: block;
+}
+#inicio-sesion.active{
+    display: none;
+}
+#registrar{
+    display: none;
+}
+#registrar.active{
+    display: block;
+}
+
+#sesion{
+  background-color: #b2fba7;
+  top: 5%;
+  position: fixed;
+  z-index: 3;
+  padding: 0.5%;
+  border-radius: 0 10px 10px 0%;
+}

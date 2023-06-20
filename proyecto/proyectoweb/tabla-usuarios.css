@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body{
+  z-index: 1;
+}
+header {
+  position: sticky;
+  top:0%;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  z-index: 2;
+}
+footer{
+    padding: .5%;
+    background-color: #4b4b4b;
+    grid-template-columns: auto auto auto 30%;
+    color: white;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ----------------------------- */
+
+nav{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 6px -6px rgb(121, 121, 121);
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin: 1% 2%;
+    font-weight:bolder;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav a.active {
+    color:black;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.productos{
+    padding:5% 5% 5% 20%;
+}
+
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: left;
+}
+th, td {
+  padding: 15px;
+  background-color: rgba(255,255,255,0.2);
+  color: #303030;
+  font-weight:lighter;
+}
+thead th {
+  background-color: #ffa0a0;
+  font-weight:bold;
+}
+tbody tr:hover {
+  background-color: rgba(255, 171, 171, 0.3);
+}
+tbody td {
+  position: relative;
+}
+
+
+.editar{
+  background-color: #4ceaa0;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 20px;
+  margin: 0% 3%;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+}
+
+
+.eliminar{
+  background-color: #ff5959;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 18px;
+  margin: 0% 3%;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+
+#buscador {
+  padding: 1%;
+  margin: 1.5% 0 ;
+  border-color: #ffa0a0;
+}
+#buscador:focus{
+  outline: none;
+  box-shadow: 0 0 0 1px #ffa0a0;
+}
+
+
+
+#sesion{
+  background-color: #b2fba7;
+  top: 5%;
+  position: fixed;
+  z-index: 3;
+  padding: 0.5%;
+  border-radius: 0 10px 10px 0%;
+}

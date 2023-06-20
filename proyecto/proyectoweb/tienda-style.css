@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body{
+  z-index: 1;
+}
+header {
+  position: sticky;
+  top:0%;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  z-index: 2;
+}
+footer{
+  padding: 3%;
+  background-color: #4b4b4b;
+  display: grid;
+  grid-template-columns: auto auto auto 30%;
+  color: white;
+  font-size: 1.3rem;
+  align-items: center;
+}
+
+/* ----------------------------- */
+
+nav{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 6px -6px rgb(121, 121, 121);
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin: 1% 2%;
+    font-weight:bolder;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav a.active {
+    color:black;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+
+
+#tienda{
+  min-height: 100vh;
+}
+
+
+
+/*
+.productos{
+  padding: 5%;
+}
+
+td img{
+  width: 100px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+*/
+
+
+#contenedorDatos{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+
+.card-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  padding: 2%;
+  margin: 5%;
+}
+
+.card-container img{
+  width: 180px;
+  height: 200px;
+  padding-bottom: 2%;
+}
+
+
+.card-container h1{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.card-container p{
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 5px;
+  /*
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  */
+}
+
+.card-container .button-wrapper{
+  margin-top: 18px;
+}
+
+.card-container .btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+  margin: 10px;
+}
+
+.card-container .outline {
+  background: transparent;
+  color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  cursor:default;
+}
+
+.card-container .fill {
+  background: rgba(0, 0, 0, 0.9);
+  color: rgba(255,255,255,0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease; 
+}
+
+.card-container .fill:hover{
+  transform: scale(1.3);  
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .3s ease;    
+}
+
+#sesion{
+  background-color: #b2fba7;
+  top: 5%;
+  position: fixed;
+  z-index: 3;
+  padding: 0.5%;
+  border-radius: 0 10px 10px 0%;
+}
