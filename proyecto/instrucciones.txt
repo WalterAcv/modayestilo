@@ -1,0 +1,10 @@
+Descargar la carpeta proyectoweb y moverla a htdocs para ejecutarla localmente
+Abrir la interfaz de mysql que se utilice y pegar el contenido del archivo modaestilo.sql que se encuentra dentro de la carpeta db
+Iniciar desde la dirección localhost/proyectoweb/index.php
+Para ingresar a la tabla de usuarios utilizar las credenciales:
+usuario: admin
+contraseña: admin
+
+funciones disponibles:
+registrar usuario
+eliminar usuario
